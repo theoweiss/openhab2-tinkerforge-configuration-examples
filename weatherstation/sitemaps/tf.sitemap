@@ -1,0 +1,14 @@
+sitemap tf_weather label="Tinkerforge Weather Station"
+{
+	  Frame {
+	  			Text item=TF_Humdity 
+				Text item=TF_Barometer
+				Text item=TF_Barometer_Temperature
+				Text item=TF_AmbientLight
+				Switch item=TF_LCDBacklight
+				Switch item=TF_Button0
+				Switch item=TF_Button1
+				Switch item=TF_Button2
+				Switch item=TF_Button3
+			}
+}

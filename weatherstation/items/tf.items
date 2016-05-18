@@ -1,0 +1,12 @@
+Number TF_Humdity                 "Humidity [%.1f %%]"  { tinkerforge="uid=b2j" }
+Number TF_Barometer               "Pressure [%.1f mBar]" { tinkerforge="uid=d8G" }
+Number TF_Barometer_Temperature   "Temperature [%.1f °C]" { tinkerforge="uid=d8G, subid=temperature" }
+Number TF_AmbientLight            "Luminance [%.1f Lux]" { tinkerforge="uid=ef5" }
+ 
+String TF_LCD         "LCD" { tinkerforge="uid=d4j"}
+Switch TF_LCDBacklight        "LCDBacklight" { tinkerforge="uid=d4j, subid=backlight"}
+Switch TF_Button0         "Button0" { tinkerforge="uid=d4j, subid=button0"}
+Switch TF_Button1         "Button1" { tinkerforge="uid=d4j, subid=button1"}
+Switch TF_Button2         "Button2" { tinkerforge="uid=d4j, subid=button2"}
+Switch TF_Button3         "Button3" { tinkerforge="uid=d4j, subid=button3"}
+

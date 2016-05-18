@@ -1,0 +1,11 @@
+import org.openhab.core.library.types.*
+
+rule "write every 10 seconds"
+    when
+        Time cron "0/1 * * * * ?"
+    then
+       // var amb = TF_AmbientLight.state
+        //var ambint = amb::intValue()
+        tfOLEDSimpleGauge("x9z", 0, 100, 50)
+end
+

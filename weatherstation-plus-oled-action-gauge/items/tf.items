@@ -1,0 +1,6 @@
+Number TF_Humdity                 "Humidity [%.1f %%]"  { tinkerforge="uid=b2j" }
+Number TF_Barometer               "Pressure [%.1f mBar]" { tinkerforge="uid=d8G" }
+Number TF_Barometer_Temperature   "Temperature [%.1f °C]" { tinkerforge="uid=d8G, subid=temperature" }
+Number TF_AmbientLight            "Luminance [%.1f Lux]" { tinkerforge="uid=ef5" }
+String OLED       "OLED" { tinkerforge="uid=xbf"}
+

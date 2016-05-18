@@ -1,0 +1,77 @@
+import org.openhab.core.library.types.*
+
+rule "write every 10 seconds"
+    when
+        Time cron "0/10 * * * * ?"
+    then
+        tfOLEDWriteLine("x9z", 0, 0, String::format("Temperature: %4s", TF_Barometer_Temperature.state.format("%.1f")))
+        tfOLEDWriteLine("x9z", 1, 0, String::format("Humidity   : %4s", TF_Humdity.state.format("%.1f")))
+        tfOLEDWriteLine("x9z", 2, 0, String::format("Pressure   : %4s", TF_Barometer.state.format("%.0f")))
+        tfOLEDWriteLine("x9z", 3, 0, String::format("Luminance  : %4s", TF_AmbientLight.state.format("%.0f")))
+end
+
+rule "Weatherstation OLED update temperature"
+        when 
+            Item TF_Barometer_Temperature received update 
+        then
+            tfOLEDWriteLine("x9z", 0, 0, String::format("Temperature: %4s", TF_Barometer_Temperature.state.format("%.1f")))
+end
+
+rule "Weatherstation OLED update humidity"
+        when 
+            Item TF_Humdity received update
+        then
+            tfOLEDWriteLine("x9z", 1, 0, String::format("Humidity   : %4s", TF_Humdity.state.format("%.1f")))
+end
+
+rule "Weatherstation OLED update airpressure"
+        when 
+            Item TF_Barometer received update
+        then
+            tfOLEDWriteLine("x9z", 2, 0, String::format("Pressure   : %4s", TF_Barometer.state.format("%.0f")))
+end
+
+rule "Weatherstation OLED update ambientLight"
+        when 
+            Item TF_AmbientLight received update
+        then
+            tfOLEDWriteLine("x9z", 3, 0, String::format("Luminance  : %4s", TF_AmbientLight.state.format("%.0f")))
+end
+
+rule "write every 10 seconds OLED64"
+    when
+        Time cron "0/10 * * * * ?"
+    then
+        tfOLEDWriteLine("xbf", 0, 0, String::format("Temp: %4s", TF_Barometer_Temperature.state.format("%.1f")))
+        tfOLEDWriteLine("xbf", 1, 0, String::format("Hum : %4s", TF_Humdity.state.format("%.1f")))
+        tfOLEDWriteLine("xbf", 2, 0, String::format("Pres: %4s", TF_Barometer.state.format("%.0f")))
+        tfOLEDWriteLine("xbf", 3, 0, String::format("Lum : %4s", TF_AmbientLight.state.format("%.0f")))
+end
+
+rule "Weatherstation OLED64 update temperature"
+        when 
+            Item TF_Barometer_Temperature received update 
+        then
+            tfOLEDWriteLine("xbf", 0, 0, String::format("Temp: %4s", TF_Barometer_Temperature.state.format("%.1f")))
+end
+
+rule "Weatherstation OLED64 update humidity"
+        when 
+            Item TF_Humdity received update
+        then
+            tfOLEDWriteLine("xbf", 1, 0, String::format("Hum : %4s", TF_Humdity.state.format("%.1f")))
+end
+
+rule "Weatherstation OLED64 update airpressure"
+        when 
+            Item TF_Barometer received update
+        then
+            tfOLEDWriteLine("xbf", 2, 0, String::format("Pres: %4s", TF_Barometer.state.format("%.0f")))
+end
+
+rule "Weatherstation OLED64 update ambientLight"
+        when 
+            Item TF_AmbientLight received update
+        then
+            tfOLEDWriteLine("xbf", 3, 0, String::format("Lum : %4s", TF_AmbientLight.state.format("%.0f")))
+end
