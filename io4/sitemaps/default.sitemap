@@ -1,0 +1,7 @@
+sitemap io16 label="IO4"
+{
+	Frame {
+		Switch item=out0
+		Text item=in1
+	}
+}

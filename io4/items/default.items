@@ -1,0 +1,2 @@
+Switch out0		"out0 [MAP(en.map):%s]" {tinkerforge="uid=h56, subid=out0"}
+Contact in1 		"in1 [MAP(en.map):%s]" {tinkerforge="uid=h56, subid=in1"}

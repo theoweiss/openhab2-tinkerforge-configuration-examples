@@ -1,0 +1,1 @@
+Number Temp                "Temperature (Thermocouple) [%.1f]"  { tinkerforge="uid=xmR" }

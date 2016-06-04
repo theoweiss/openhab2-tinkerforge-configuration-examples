@@ -1,0 +1,6 @@
+sitemap co2 label="C02"
+{
+	Frame {
+		Text item=C02
+	}
+}

@@ -1,0 +1,2 @@
+Color  tfled1   <slider> {tinkerforge="uid=jGu, subid=ledgroup1"}
+Color  tfled2   <slider> {tinkerforge="uid=jGu, subid=ledgroup2"}

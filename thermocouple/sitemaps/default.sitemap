@@ -1,0 +1,6 @@
+sitemap thermocouple label="Thermocouple"
+{
+	Frame {
+		Text item=Temp
+	}
+}

@@ -1,0 +1,7 @@
+sitemap led label="TinkerForge LED"
+{
+    Frame label="LED Strip" {
+        Colorpicker item=tfled1 icon="slider"
+        Colorpicker item=tfled2 icon="slider"
+    }
+}

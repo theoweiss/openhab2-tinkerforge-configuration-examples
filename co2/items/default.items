@@ -1,0 +1,1 @@
+Number C02                "C02 Concentration [%.1f]"  { tinkerforge="uid=x7b" }

@@ -1,0 +1,6 @@
+sitemap uv label="UV Light"
+{
+	Frame {
+		Text item=UV
+	}
+}
