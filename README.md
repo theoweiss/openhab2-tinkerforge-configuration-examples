@@ -1,5 +1,4 @@
 The configuration examples for openHAB v2.
 
----
-#### You will find the current Tinkerforge Binding Docs [>>> here <<<](doc/Tinkerforge-Binding.md)
----
+For installation of a config change to the according directory and execute
+`tar cf - . | ( cd /etc/openhab2/ && tar xvf - )`
