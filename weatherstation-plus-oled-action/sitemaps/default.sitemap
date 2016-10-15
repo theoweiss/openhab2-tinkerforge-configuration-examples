@@ -5,5 +5,7 @@ sitemap tf_weather label="Tinkerforge Weather Station"
 				Text item=TF_Barometer
 				Text item=TF_Barometer_Temperature
 				Text item=TF_AmbientLight
+				Text item=ConnectionStatus
+				Text item=Reconnects
 			}
 }

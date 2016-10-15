@@ -4,3 +4,6 @@ Number TF_Barometer_Temperature   "Temperature [%.1f °C]" { tinkerforge="uid=d8
 Number TF_AmbientLight            "Luminance [%.1f Lux]" { tinkerforge="uid=ef5" }
 String OLED       "OLED" { tinkerforge="uid=xbf"}
 
+Contact ConnectionStatus "ConnectionStatus" {tinkerforge="uid=192.168.178.34:4223, subid=isconnected"}
+Number Reconnects "Reconnects" {tinkerforge="uid=192.168.178.34:4223, subid=connected_counter"}
+

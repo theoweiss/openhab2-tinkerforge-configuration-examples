@@ -1,0 +1,184 @@
+openhab.cfg
+#tinkerforge:hosts=192.168.1.104 127.0.0.1
+#tinkerforge:hosts=proliant.local
+tinkerforge:hosts=localhost
+tinkerforge:refresh=100000
+
+tinkerforge:io16.uid=efY
+tinkerforge:io16.type=bricklet_io16
+tinkerforge:io16.debouncePeriod=100
+
+
+
+tinkerforge:io16ina0.uid=efY
+tinkerforge:io16ina0.subid=ina0
+tinkerforge:io16ina0.type=iosensor
+tinkerforge:io16ina0.pullUpResistorEnabled=true
+
+tinkerforge:io16ina1.uid=efY
+tinkerforge:io16ina1.subid=ina1
+tinkerforge:io16ina1.type=iosensor
+tinkerforge:io16ina1.pullUpResistorEnabled=true
+
+#tinkerforge:io16ina2.uid=efY
+#tinkerforge:io16ina2.subid=ina2
+#tinkerforge:io16ina2.type=iosensor
+#tinkerforge:io16ina2.pullUpResistorEnabled=true
+
+#tinkerforge:io16ina3.uid=efY
+#tinkerforge:io16ina3.subid=ina3
+#tinkerforge:io16ina3.type=iosensor
+#tinkerforge:io16ina3.pullUpResistorEnabled=true
+
+###
+tinkerforge:io16outa2.uid=efY
+tinkerforge:io16outa2.subid=outa2
+tinkerforge:io16outa2.type=io_actuator
+#tinkerforge:io16outa2.defaultState=true
+
+tinkerforge:io16outa3.uid=efY
+tinkerforge:io16outa3.subid=outa3
+tinkerforge:io16outa3.type=io_actuator
+#tinkerforge:io16outa3.defaultState=true
+##
+
+tinkerforge:io16ina4.uid=efY
+tinkerforge:io16ina4.subid=ina4
+tinkerforge:io16ina4.type=iosensor
+tinkerforge:io16ina4.pullUpResistorEnabled=true
+
+tinkerforge:io16ina5.uid=efY
+tinkerforge:io16ina5.subid=ina5
+tinkerforge:io16ina5.type=iosensor
+tinkerforge:io16ina5.pullUpResistorEnabled=true
+
+tinkerforge:io16ina6.uid=efY
+tinkerforge:io16ina6.subid=ina6
+tinkerforge:io16ina6.type=iosensor
+tinkerforge:io16ina6.pullUpResistorEnabled=true
+
+tinkerforge:io16ina7.uid=efY
+tinkerforge:io16ina7.subid=ina7
+tinkerforge:io16ina7.type=iosensor
+tinkerforge:io16ina7.pullUpResistorEnabled=true
+
+#### port b
+#tinkerforge:io16inb0.uid=efY
+#tinkerforge:io16inb0.subid=inb0
+#tinkerforge:io16inb0.type=iosensor
+#tinkerforge:io16inb0.pullUpResistorEnabled=true
+
+tinkerforge:io16outb0.uid=efY
+tinkerforge:io16outb0.subid=outb0
+tinkerforge:io16outb0.type=io_actuator
+#tinkerforge:io16outb0.defaultState=true
+#####
+
+tinkerforge:io16inb1.uid=efY
+tinkerforge:io16inb1.subid=inb1
+tinkerforge:io16inb1.type=iosensor
+tinkerforge:io16inb1.pullUpResistorEnabled=true
+
+tinkerforge:io16inb2.uid=efY
+tinkerforge:io16inb2.subid=inb2
+tinkerforge:io16inb2.type=iosensor
+tinkerforge:io16inb2.pullUpResistorEnabled=true
+
+tinkerforge:io16inb3.uid=efY
+tinkerforge:io16inb3.subid=inb3
+tinkerforge:io16inb3.type=iosensor
+tinkerforge:io16inb3.pullUpResistorEnabled=true
+
+tinkerforge:io16inb4.uid=efY
+tinkerforge:io16inb4.subid=inb4
+tinkerforge:io16inb4.type=iosensor
+tinkerforge:io16inb4.pullUpResistorEnabled=true
+
+####
+tinkerforge:io16inb5.uid=efY
+tinkerforge:io16inb5.subid=inb5
+tinkerforge:io16inb5.type=iosensor
+tinkerforge:io16inb5.pullUpResistorEnabled=true
+
+#tinkerforge:io16outb5.uid=efY
+#tinkerforge:io16outb5.subid=outb5
+#tinkerforge:io16outb5.type=io_actuator
+#tinkerforge:io16outb5.defaultState=true
+
+###
+tinkerforge:io16inb6.uid=efY
+tinkerforge:io16inb6.subid=inb6
+tinkerforge:io16inb6.type=iosensor
+tinkerforge:io16inb6.pullUpResistorEnabled=true
+
+tinkerforge:io16inb7.uid=efY
+tinkerforge:io16inb7.subid=inb7
+tinkerforge:io16inb7.type=iosensor
+tinkerforge:io16inb7.pullUpResistorEnabled=true
+
+#tinkerforge:io16outb0.uid=efY
+#tinkerforge:io16outb0.subid=outb0
+#tinkerforge:io16outb0.type=io_actuator
+#tinkerforge:io16outb0.defaultState=true
+
+#tinkerforge:io16outa6.uid=efY
+#tinkerforge:io16outa6.subid=outa6
+#tinkerforge:io16outa6.type=io_actuator
+#tinkerforge:io16outa6.defaultState=false
+
+#tinkerforge:io16ina6.uid=efY
+#tinkerforge:io16ina6.subid=ina6
+#tinkerforge:io16ina6.type=iosensor
+#tinkerforge:io16ina0.pullUpResistorEnabled=true
+
+
+
+items:
+
+Contact ina0		"ina0 [MAP(en.map):%s]" {tinkerforge="uid=efY, subid=ina0"}
+Contact ina1		"ina1 [MAP(en.map):%s]" {tinkerforge="uid=efY, subid=ina1"}
+Switch outa2		"outa2" {tinkerforge="uid=efY, subid=outa2"}
+Switch outa3		"outa3" {tinkerforge="uid=efY, subid=outa3"}
+//Contact ina2		"ina2 [MAP(en.map):%s]" {tinkerforge="uid=efY, subid=ina2"}
+//Contact ina3		"ina3 [MAP(en.map):%s]" {tinkerforge="uid=efY, subid=ina3"}
+Contact ina4		"ina4 [MAP(en.map):%s]" {tinkerforge="uid=efY, subid=ina4"}
+Contact ina5		"ina5 [MAP(en.map):%s]" {tinkerforge="uid=efY, subid=ina5"}
+Contact ina6		"ina6 [MAP(en.map):%s]" {tinkerforge="uid=efY, subid=ina6"}
+Contact ina7		"ina7 [MAP(en.map):%s]" {tinkerforge="uid=efY, subid=ina7"}
+
+//Contact inb0		"inb0 [MAP(en.map):%s]" {tinkerforge="uid=efY, subid=inb0"}
+Switch outb0		"outa3" {tinkerforge="uid=efY, subid=outb0"}
+Contact inb1		"inb1 [MAP(en.map):%s]" {tinkerforge="uid=efY, subid=inb1"}
+Contact inb2		"inb2 [MAP(en.map):%s]" {tinkerforge="uid=efY, subid=inb2"}
+Contact inb3		"inb3 [MAP(en.map):%s]" {tinkerforge="uid=efY, subid=inb3"}
+Contact inb4		"inb4 [MAP(en.map):%s]" {tinkerforge="uid=efY, subid=inb4"}
+Contact inb5		"inb5 [MAP(en.map):%s]" {tinkerforge="uid=efY, subid=inb5"}
+Contact inb6		"inb6 [MAP(en.map):%s]" {tinkerforge="uid=efY, subid=inb6"}
+Contact inb7		"inb7 [MAP(en.map):%s]" {tinkerforge="uid=efY, subid=inb7"}
+
+sitemap:
+
+sitemap io16 label="Main Menu"
+{
+	Frame {
+		Text item=ina0
+		Text item=ina1
+		Switch item=outa2
+		Switch item=outa3
+		Text item=ina4
+		Text item=ina5
+		Text item=ina6
+		Text item=ina7
+
+		Switch item=outb0
+		Text item=inb1
+		Text item=inb2
+		Text item=inb3
+		Text item=inb4
+		Text item=inb5
+		Text item=inb6
+		Text item=inb7
+		Switch item=r0
+		Switch item=r1
+	}
+}
