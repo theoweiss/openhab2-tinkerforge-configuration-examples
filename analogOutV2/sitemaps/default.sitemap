@@ -2,7 +2,6 @@ sitemap io16 label="AnalogOutV2"
 {
 	Frame {
 	Slider item=ADIMMER
-	Switch item=ADIMMER
-	Setpoint item=ADIMMERPERCENT step=1000
+	Setpoint item=ADIMMERPERCENT step=10
 	}
 }

@@ -1,2 +1,2 @@
 Dimmer  ADIMMER  "Dimmer" {tinkerforge="uid=uAy, step=1000"}
-Dimmer  ADIMMERPERCENT  "Dimmerpercent" {tinkerforge="uid=uAy, step=1000"}
+Dimmer  ADIMMERPERCENT  "Dimmerpercent" {tinkerforge="uid=uAy"}
