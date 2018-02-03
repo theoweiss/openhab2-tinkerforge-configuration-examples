@@ -1,0 +1,7 @@
+sitemap co2 label="C02"
+{
+	Frame {
+		Text item=Humidity
+		Text item=Temperature
+	}
+}

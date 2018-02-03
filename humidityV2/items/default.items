@@ -1,0 +1,2 @@
+Number Humidity                "Humidity [%.1f]"  { tinkerforge="uid=Dez, subid=humidity" }
+Number Temperature             "Temperature [%.1f]"  { tinkerforge="uid=Dez, subid=temperature" }
